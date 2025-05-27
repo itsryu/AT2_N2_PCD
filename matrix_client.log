@@ -1,0 +1,46 @@
+mai. 26, 2025 8:59:13 PM processing.ClientProcessor run
+FINE: Executando strategy: InitialValidationStrategy
+mai. 26, 2025 8:59:13 PM strategy.InitialValidationStrategy execute
+FINE: Enviando matrícula para o servidor: UC23103118
+mai. 26, 2025 8:59:13 PM strategy.InitialValidationStrategy execute
+FINE: Resposta de validação recebida do servidor (tipo: java.lang.String): MATRÍCULA ENCONTRADA!
+mai. 26, 2025 8:59:13 PM processing.ClientProcessor run
+FINE: Executando strategy: MatrixDataReceptionStrategy
+mai. 26, 2025 8:59:13 PM strategy.MatrixDataReceptionStrategy execute
+FINE: Objeto rowA recebido do servidor (tipo: [J): [89, 83, 95, 69, 85, 17, 23, 91, 62, 21]
+mai. 26, 2025 8:59:13 PM strategy.MatrixDataReceptionStrategy execute
+FINE: Linha A recebida como long[] e convertida para double[].
+mai. 26, 2025 8:59:13 PM strategy.MatrixDataReceptionStrategy execute
+FINE: Objeto matrixB recebido do servidor (tipo: [[J): 
+[Amostra da Matriz (Dimensões: 1000 x ~1000), Exibindo até 5 linhas e 5 colunas da primeira linha]:
+  [39, 7, 26, 62, 73...]
+  [25, 79, 65, 25, 80...]
+  [2, 77, 85, 73, 7...]
+  [47, 32, 33, 11, 35...]
+  [100, 9, 39, 74, 53...]
+  ...
+
+mai. 26, 2025 8:59:13 PM strategy.MatrixDataReceptionStrategy execute
+FINE: Matriz B recebida como long[][] e convertida para double[][].
+mai. 26, 2025 8:59:13 PM processing.ClientProcessor run
+FINE: Executando strategy: MultiplicationStrategy
+mai. 26, 2025 8:59:13 PM strategy.MultiplicationStrategy execute
+FINE: Linha A para multiplicação (amostra): [89.0, 83.0, 95.0, 69.0, 85.0, 17.0, 23.0, 91.0, 62.0, 21.0]
+mai. 26, 2025 8:59:13 PM strategy.MultiplicationStrategy execute
+FINE: Matriz B para multiplicação (amostra): 
+[Amostra da Matriz (Dimensões: 1000 x ~1000), Exibindo até 5 linhas e 5 colunas da primeira linha]:
+  [39.0, 7.0, 26.0, 62.0, 73.0...]
+  [25.0, 79.0, 65.0, 25.0, 80.0...]
+  [2.0, 77.0, 85.0, 73.0, 7.0...]
+  [47.0, 32.0, 33.0, 11.0, 35.0...]
+  [100.0, 9.0, 39.0, 74.0, 53.0...]
+  ...
+
+mai. 26, 2025 8:59:13 PM strategy.MultiplicationStrategy execute
+FINE: Linha Resultante (amostra): [2567495.0, 2549554.0, 2518323.0, 2526837.0, 2507789.0, 2542647.0, 2527308.0, 2576251.0, 2559731.0, 2632214.0]
+mai. 26, 2025 8:59:13 PM processing.ClientProcessor run
+FINE: Executando strategy: ResultTransmissionStrategy
+mai. 26, 2025 8:59:13 PM strategy.ResultTransmissionStrategy execute
+FINE: Enviando linha resultante para o servidor (amostra: [2567495.0, 2549554.0, 2518323.0, 2526837.0, 2507789.0, 2542647.0, 2527308.0, 2576251.0, 2559731.0, 2632214.0], total elementos: 1000)
+mai. 26, 2025 8:59:18 PM java.lang.Shutdown logRuntimeExit
+
